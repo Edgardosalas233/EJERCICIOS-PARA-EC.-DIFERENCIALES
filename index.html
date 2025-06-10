@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecuaciones Diferenciales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resolución de Ecuaciones Diferenciales</h1>
+    <nav>
+      <button class="tab-btn" onclick="showTab('ej1')">Ejercicio 1</button>
+      <button class="tab-btn" onclick="showTab('ej2')">Ejercicio 2</button>
+      <button class="tab-btn" onclick="showTab('ej3')">Ejercicio 3</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="ej1" class="tab-content active">
+      <h2>Ejercicio 1</h2>
+      <img src="ejercicio1.jpg" alt="Ejercicio 1" class="ej-img">
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Euler: <span class="res" id="res-e1">...</span></li>
+        <li>Heun: <span class="res" id="res-h1">...</span></li>
+        <li>Runge-Kutta 4: <span class="res" id="res-r1">...</span></li>
+      </ul>
+      <div class="charts">
+        <img src="graf_euler1.png" alt="Euler" />
+        <img src="graf_heun1.png" alt="Heun" />
+        <img src="graf_rk1.png" alt="RK4" />
+      </div>
+    </section>
+
+    <section id="ej2" class="tab-content">
+      <h2>Ejercicio 2</h2>
+      <img src="ejercicio2.jpg" alt="Ejercicio 2" class="ej-img">
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Euler: <span class="res" id="res-e2">...</span></li>
+        <li>Heun: <span class="res" id="res-h2">...</span></li>
+        <li>Runge-Kutta 4: <span class="res" id="res-r2">...</span></li>
+      </ul>
+      <div class="charts">
+        <img src="graf_euler2.png" alt="Euler" />
+        <img src="graf_heun2.png" alt="Heun" />
+        <img src="graf_rk2.png" alt="RK4" />
+      </div>
+    </section>
+
+    <section id="ej3" class="tab-content">
+      <h2>Ejercicio 3</h2>
+      <img src="ejercicio3.jpg" alt="Ejercicio 3" class="ej-img">
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Euler: <span class="res" id="res-e3">...</span></li>
+        <li>Heun: <span class="res" id="res-h3">...</span></li>
+        <li>Runge-Kutta 4: <span class="res" id="res-r3">...</span></li>
+      </ul>
+      <div class="charts">
+        <img src="graf_euler3.png" alt="Euler" />
+        <img src="graf_heun3.png" alt="Heun" />
+        <img src="graf_rk3.png" alt="RK4" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Tabla Comparativa</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Método</th>
+          <th>Ej1</th><th>Ej2</th><th>Ej3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Euler</td>
+          <td id="comp-e1">...</td><td id="comp-e2">...</td><td id="comp-e3">...</td>
+        </tr>
+        <tr>
+          <td>Heun</td>
+          <td id="comp-h1">...</td><td id="comp-h2">...</td><td id="comp-h3">...</td>
+        </tr>
+        <tr>
+          <td>RK4</td>
+          <td id="comp-r1">...</td><td id="comp-r2">...</td><td id="comp-r3">...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Conclusiones</h3>
+    <p>Los métodos de mayor orden (como RK4) ofrecen mayor precisión a cambio de más cálculos. En estos ejercicios, RK4 produjo resultados más estables y cercanos a los valores esperados.</p>
+  </footer>
+
+    <script src="scripts.js"></script>
+    <script src="resultados.js"></script>
+</body>
+</html>
